@@ -199,7 +199,7 @@ func New(content string, level RecoveryLevel) (*QRCode, error) {
 	return q, nil
 }
 
-func newWithForcedVersion(content string, version int, level RecoveryLevel) (*QRCode, error) {
+func NewWithForcedVersion(content string, version int, level RecoveryLevel) (*QRCode, error) {
 	var encoder *dataEncoder
 
 	switch {
